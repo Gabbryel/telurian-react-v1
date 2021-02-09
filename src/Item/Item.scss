@@ -1,0 +1,95 @@
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em 2em;
+    color: var(--grey);
+    .item-photo {
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        img {
+            width: 100%;
+        }
+        button {
+            margin: -1.3em 0;
+            font-size: 1rem;
+            width: auto;
+            color: var(--grey);
+            border: none;
+            background-color: #00000000;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-shadow: 1.5px 1.5px 1px white;
+        }
+        .paypal {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            select {
+                width: 100%;
+                font-size: .4rem;
+                margin-top: .7em;
+            }
+            input {
+                width: 100%;
+            }
+            .buy-now {
+                border: 1px solid var(--grey);
+                border-radius: 5px;
+                padding: 0 1em;
+                width: 97%;
+                opacity: .8;
+            }
+        }
+    }
+    .item-description {
+        align-self: start;
+        padding-left: 2em;
+        width: 65%;
+        h3 {
+            margin: 0;
+            padding-bottom: 1em;
+            font-size: 1.4rem;
+            text-align: left;
+        }
+        p {
+            text-align: left;
+            font-size: 1.3rem;
+        }
+        p:last-child {
+            padding-top: 1em;
+            font-weight: 900;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .item {
+        .item-photo {
+            width: 27%;
+            .paypal {
+                width: 100%;
+                select {
+                    width: 100%;
+                    font-size: 1rem;
+                    color: var(--grey);
+                }
+            .buy-now {
+                margin-top: 1em;
+                width: 60%;
+            }
+            }
+        }
+        .item-description {
+            width: 73%;
+            h3 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    .about-container__snippets {
+        padding: 2em 1em;
+        p {
+            letter-spacing: .2em;
+            font-size: 1.4rem;
+            padding: 1em 0;
+        }
+        iframe {
+            opacity: .7;
+            z-index: 10;
+        }
+    }
+}
+
+
+@media (min-width: 900px) {
+    .about-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        .about-telurian {
+            order: 2;
+            width: 60%;
+            p {
+                text-indent: 0;
+                text-align: left;
+                font-size: 1.4rem;
+            }
+            h3 {
+                text-align: left;
+                font-size: 2rem;
+            }
+        }
+        .about-container__snippets {
+            order: 3;
+            width: 100%;
+        }
+        .opuses-container {
+            order: 1;
+            width: 40%;
+            text-align: right;
+            .opus {
+                font-size: 1.4rem;
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

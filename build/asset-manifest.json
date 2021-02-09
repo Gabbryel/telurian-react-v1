@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e9277088.chunk.css",
+    "main.js": "/static/js/main.a9258928.chunk.js",
+    "main.js.map": "/static/js/main.a9258928.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bfe9928e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bfe9928e.js.map",
+    "static/js/2.6123845c.chunk.js": "/static/js/2.6123845c.chunk.js",
+    "static/js/2.6123845c.chunk.js.map": "/static/js/2.6123845c.chunk.js.map",
+    "static/js/3.73fd2e55.chunk.js": "/static/js/3.73fd2e55.chunk.js",
+    "static/js/3.73fd2e55.chunk.js.map": "/static/js/3.73fd2e55.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e9277088.chunk.css.map": "/static/css/main.e9277088.chunk.css.map",
+    "static/js/2.6123845c.chunk.js.LICENSE.txt": "/static/js/2.6123845c.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/Archi18.329828b4.TTF",
+    "static/media/bandcamp.edce65b3.svg": "/static/media/bandcamp.edce65b3.svg",
+    "static/media/envelope.34fe9faa.svg": "/static/media/envelope.34fe9faa.svg",
+    "static/media/facebook-square.0657b85f.svg": "/static/media/facebook-square.0657b85f.svg",
+    "static/media/instagram-square.958e9ee1.svg": "/static/media/instagram-square.958e9ee1.svg",
+    "static/media/soundcloud.64f9aed7.svg": "/static/media/soundcloud.64f9aed7.svg",
+    "static/media/wa.633f15d1.svg": "/static/media/wa.633f15d1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bfe9928e.js",
+    "static/js/2.6123845c.chunk.js",
+    "static/css/main.e9277088.chunk.css",
+    "static/js/main.a9258928.chunk.js"
+  ]
+}

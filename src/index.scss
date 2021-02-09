@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Anor"; 
+  src: url("./fonts/ARCHIAN/Archi10.TTF") format("truetype");
+}
+@font-face {
+  font-family: 'Abw';
+  src: url("./fonts/ARCHIAN/Archi18.TTF") format("truetype");
+}
+
+$grey: #676767;
+:root {
+  --grey: #{$grey};
+  font-size: calc( 6px + 1vw );
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 0;
+}

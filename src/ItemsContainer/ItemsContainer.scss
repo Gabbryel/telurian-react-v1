@@ -1,0 +1,28 @@
+.items-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    p:first-child, #order-page__punch-line {
+        font-variant: small-caps;
+        font-weight: 900;
+        font-size: 1.4rem;
+        letter-spacing: .2em;
+        padding: 2em 0;
+    }
+    #order-page__punch-line {
+        padding: 0 0 1em;
+    }
+    .order-page__shipping {
+        text-align: left;
+        padding: 0 2em;
+        font-size: 1.2rem;
+        p:first-child {
+            font-size: 2rem;
+            padding: 0 0 .5em;
+        }
+        p:nth-child(2), p:nth-child(5), p:nth-child(8), p:nth-child(11), p:nth-child(12) {
+            font-weight: 900;
+            margin: 1em 0;
+        }
+    }
+}
