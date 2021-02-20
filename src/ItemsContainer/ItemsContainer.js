@@ -2,15 +2,17 @@ import React from 'react';
 import './ItemsContainer.scss';
 import Item from '../Item/Item';
 import { items } from './items.js';
+import {useLocation} from 'react-router-dom';
 
 
-const ItemsContainer = ({page}) => {
+const ItemsContainer = () => {
+    const {pathname} = useLocation();
     return(
         <div className='items-container'>
             <p>Three Different High-end Versions</p>
-           {page === 'order' ? <p id='order-page__punch-line'>Order your copy here!</p> : null }
-           { items.map((el, i) => <Item key={i} imgUrl={el.imgUrl} paypalBtn={el.payPalBtn} itemName={el.itemName} itemDescription={el.itemDescription} delivery={el.delivery} page={page}/>) }
-           { page === 'order' ? <div className='order-page__shipping'>
+           {pathname === '/order' ? <p id='order-page__punch-line'>Order your copy here!</p> : null }
+           { items.map((el, i) => <Item key={i} imgUrl={el.imgUrl} paypalBtn={el.payPalBtn} itemName={el.itemName} itemDescription={el.itemDescription} delivery={el.delivery} />) }
+           { pathname === '/order' ? <div className='order-page__shipping'>
                                     <p>Shipping Options:</p>
                                     <p>Shipping in Romania</p>
                                     <p>Posta Romana 5 Euro (including CD protection) 2-4 days.</p>

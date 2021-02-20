@@ -1,55 +1,72 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import Title from './Title/Title.js';
 import './App.scss';
 import Footer from './Footer/Footer.js';
 import Background from './Background/Background.js';
 import AboutContainer from './AboutContainer/AboutContainer';
 import ItemsContainer from './ItemsContainer/ItemsContainer';
+import HamburgerMenu from './HamburgerMenu/HamburgerMenu';
+import PopUpTelurian from './AboutPopUps/PopUpTelurian';
+import TShirtsContainer from './TShirtsContainer/TShirtsContainer.js';
 
 
 
 
 function App() {
-  const [ background, setBackground ] = useState("https://res.cloudinary.com/https-www-zebramusic-net/image/upload/q_auto/v1609322372/backgrounds/tellurium_cc7csd.png");
-  const [ page, setPage ] = useState('landing');
-  const [ font, setFont ] = useState('Abw');
-  const [titlePadding, setTitlePadding] = useState(0);
-  const titleBtn = document.getElementById('title');
-  const orderHereBtn = document.getElementById('order-here');
 
   useEffect(() => {
     window.scrollTo(0, 0);
   })
 
-  const onPageChange = (e) => {
-    if (page === 'landing') {
-      setPage('about');
-      setBackground('https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1609321724/backgrounds/fotoBkg_hy7n23.jpg');
-      setFont('Anor');
-      setTitlePadding(2);
-    } else if ( (page === 'about' || page === 'order') && e.target === titleBtn ) {
-      setPage('landing');
-      setBackground('https://res.cloudinary.com/https-www-zebramusic-net/image/upload/q_auto/v1609322372/backgrounds/tellurium_cc7csd.png');
-      setFont('Abw');
-      setTitlePadding(0);
-    }
-  }
+  let mobileHeight = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${mobileHeight}px`);
+  window.addEventListener('resize', () => {
+  let mobileHeight = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${mobileHeight}px`);
+  });
 
-  const fromAboutToOrder = () => {
-    setPage('order');
-    setTitlePadding(2);
-  }
-  
     return (
-        <div className="App">
-          <Background background={background}/>
-          {page === 'landing' ? <h3 id='out'>OUT NOW</h3> : null}
-          <Title font={font} titlePadding={titlePadding} onPageChange={onPageChange}/>
-          {page === 'landing' ? <button id='enter-btn' onClick={onPageChange}>ENTER</button> : null}
-          {page === 'about' ? <><AboutContainer /> <ItemsContainer page={page}/> <button id='order-here' onClick={fromAboutToOrder}>ORDER HERE</button></> : null }
-          {page === 'order' ? <ItemsContainer page={page}/> : null }
-          <Footer />
-        </div>
+          <div className="App">
+              <Background />
+            <Switch>
+              <Route exact path="/">
+                <h3 id='out'>OUT NOW</h3>
+                <Title />
+                <button id='enter-btn'><Link to="/about">ENTER</Link></button>
+              </Route>
+              <Route exact path="/about">
+                <>
+                  <HamburgerMenu />
+                  <Title />
+                  <AboutContainer /> 
+                  <ItemsContainer/> 
+                  <button id='order-here'><Link to="/order">ORDER HERE</Link></button>
+                </>
+              </Route>
+              <Route exact path="/order">
+                <>
+                  <HamburgerMenu />
+                  <Title />
+                  <ItemsContainer/>
+                </>
+              </Route>
+              <Route exact path="/merch">
+                <>
+                  <HamburgerMenu />
+                  <Title />
+                  <TShirtsContainer />
+                </>
+              </Route>
+              <Route path="/*">
+                <h3 id='out'>OUT NOW</h3>
+                <Title />
+                <button id='enter-btn'><Link to="/about">ENTER</Link></button>
+              </Route>
+            </Switch>
+            
+            <Footer />
+          </div>
     )
 }
 

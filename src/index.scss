@@ -16,11 +16,10 @@ $grey: #676767;
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
-  border: 1px solid black;
 }
 
 a {

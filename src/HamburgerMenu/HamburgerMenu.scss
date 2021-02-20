@@ -1,0 +1,21 @@
+.hamburger-container {
+    position: fixed;
+    top: 0;
+    right: -13px;
+    font-size: 20px;
+    z-index: 100;
+    #hamburger-menu-logo {
+        height: 30px;
+    }
+    .hamburger-links {
+        ul {
+            text-align: center;
+            padding: 0;
+            li {
+                list-style: none;
+                padding: .01em 1em;
+                margin-bottom: .4em;
+            }
+        }
+    }
+}

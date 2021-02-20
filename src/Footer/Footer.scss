@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
 .footer {
     width: 100%;
-    overflow: hidden;
-    align-self: flex-end;
+    position: relative;
     background-color: #67678010;
     padding: 1em 0;
     color: var(--grey);
     font-size: 1rem;
+    align-self: flex-end;
     p {
         padding: 0.2em 0;
     }

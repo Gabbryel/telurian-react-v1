@@ -1,18 +1,23 @@
 import React from 'react';
 import './Item.scss';
+import {useLocation} from 'react-router-dom';
 
-const Item = ({page, imgUrl, paypalBtn, itemName, itemDescription, delivery}) => {
+const Item = ({key, imgUrl, paypalBtn, itemName, itemDescription, delivery}) => {
+    const {pathname} = useLocation()
+    const timeNow = new Date()
+    const promoTime = timeNow.getUTCHours() + 2
+    console.log(promoTime)
     return(
         <div className='item'>
             <div className='item-photo'>
                 <img src={imgUrl}/>
-                {page === 'about' ? <button>More photos</button> : null}
-                {page ==='order' ? <div className='paypal' dangerouslySetInnerHTML={{__html: paypalBtn}}></div> : null }
+                {pathname === '/about' ? <button>More photos</button> : null}
+                {pathname ==='/order' ? <div className='paypal' dangerouslySetInnerHTML={{__html: paypalBtn}}></div> : null }
             </div>
             <div className='item-description'>
                 <h3>{itemName}</h3>
                 {itemDescription.map(el => <p>{el}</p>)}
-                { page === 'order' ? <p>{delivery}</p> : null}
+                { pathname === '/order' ? <p>{delivery}</p> : null}
             </div>
         </div>
     )

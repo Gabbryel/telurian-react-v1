@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutContainer.scss';
 import OpusContainer from '../OpusContainer/OpusContainer';
 import AboutTelurian from '../AboutTelurian/AboutTelurian';
+import PopUpTelurian from '../AboutPopUps/PopUpTelurian';
 
 
 const AboutContainer = () => {

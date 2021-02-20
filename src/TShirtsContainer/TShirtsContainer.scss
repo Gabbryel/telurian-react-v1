@@ -1,0 +1,99 @@
+.tshirts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    p:first-child, p:nth-child(2) {
+        font-size: 1.3rem;
+    }
+    p:first-child {
+        letter-spacing: .3em;
+        margin-bottom: .5rem;
+    }
+    p:nth-child(2) {
+        letter-spacing: .17rem;
+        margin-bottom: 2rem;
+    }
+    p:nth-child(3), p:nth-child(4),p:nth-child(5){
+        font-size: 1.1rem;
+        margin-bottom: .3rem;
+    }
+    p:nth-child(5) {
+        letter-spacing: .2em;
+    }
+    p:nth-child(6) {
+        margin-top: 1rem;
+    }
+    .tshirts-render {
+        position: relative;
+        padding-bottom: 4em;
+        .tshirt {
+            padding: 3rem 0 3rem;
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                font-weight: 900;
+            }
+            .tshirts-images {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                img {
+                    width: 70%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    margin-bottom: 1em;
+                }
+            }
+            .tshirt-paypal {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    select {
+                        position: relative;
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                    .buy-now {
+                        position: relative;
+                        margin: 1rem auto 0;
+                        border: 1px solid var(--grey);
+                        border-radius: 5px;
+                        margin-top: .4em;
+                        padding: 0 1em;
+                        width: 50%;
+                        opacity: .8;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .tshirts-container {
+        .tshirts-render {
+            max-width: 600px;
+            .tshirt {
+                .tshirts-images {
+                    justify-content: space-evenly;
+                    img {
+                        width: 45%;
+                        display: block;
+                    }
+                }
+                .tshirt-paypal {
+                    form {
+                        select {
+                            width: 50%;
+                            font-size: .9rem;
+                        }
+                        .buy-now {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

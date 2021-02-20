@@ -26,8 +26,8 @@ export const items = [
         payPalBtn: `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="ST6VVQG7TLXTU">
-                        <table>
-                        <tr><td><input type="hidden" name="on0" value="Options"></td></tr><tr><td><select name="os0">
+                        
+                        <input type="hidden" name="on0" value="Options"></td></tr><tr><td><select name="os0">
                             <option value="personal pick up (no shipping)">item (no shipping incl.) €79.99 EUR</option>
                             <option value="shipping in Romania by Post">item + shipping in Romania by Post €84.99 EUR</option>
                             <option value="shipping in Romania by Courier">item + shipping in Romania by Courier €89.99 EUR</option>
@@ -35,8 +35,8 @@ export const items = [
                             <option value="shipping in EU by Courier">item + shipping in EU by Courier €106.99 EUR</option>
                             <option value="shipping outside EU by Post">item + shipping outside EU by Post €107.99 EUR</option>
                             <option value="shipping ouside EU by Courier">item + shipping ouside EU by Courier €126.99 EUR</option>
-                        </select> </td></tr>
-                        </table>
+                        </select>
+                        
                         <input type="hidden" name="currency_code" value="EUR">
                         <input class='buy-now' type="image" src="https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612710144/buynowBtn_qpl4fq.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
@@ -50,15 +50,17 @@ export const items = [
     {
         imgUrl: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612607191/tDigEd_lz9tty.png',
         payPalBtn: `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="B5CKHRFNJ872L">
-                        <input type="hidden" name="on0" value="Options"><select name="os0">
-                            <option value="one time download link">one time download link €29.99 EUR</option>
-                        </select>
-                        <input type="hidden" name="currency_code" value="EUR">
-                        <input class='buy-now' type="image" src="https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612710144/buynowBtn_qpl4fq.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form>`,
+                                   <input type="hidden" name="cmd" value="_s-xclick">
+                                   <input type="hidden" name="hosted_button_id" value="B5CKHRFNJ872L">
+                                   <input type="hidden" name="on0" value="Options">
+                                   <select name="os0">
+                                       <option value="one time download link">one time download link €29.99 EUR</option>
+                                   </select>
+                                   <input type="hidden" name="currency_code" value="EUR">
+                                   <input class='buy-now' type="image" src="https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612710144/buynowBtn_qpl4fq.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                   <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                               </form>
+        `,
         itemName: `TELLURIUM DIGITAL VERSION`,
         itemDescription: ['Contains 25 tracks in wav and/or mp3 format', 'Full pictorial of the Digipack versions', 'Alternative digital poster of TELURIAN',    
                            'Digital version of the cover', 'BONUS (optional): a free copy of TELURIAN DELUXE 3CD DIGIPACK'],
