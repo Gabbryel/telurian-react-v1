@@ -1,5 +1,5 @@
 .tshirts-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     p:first-child, p:nth-child(2) {
         font-size: 1.3rem;
@@ -25,6 +25,7 @@
     .tshirts-render {
         position: relative;
         padding-bottom: 4em;
+        margin: 0 auto;
         .tshirt {
             padding: 3rem 0 3rem;
             p {
@@ -75,6 +76,9 @@
         .tshirts-render {
             max-width: 600px;
             .tshirt {
+                p {
+                    font-size: 1.2rem;
+                }
                 .tshirts-images {
                     justify-content: space-evenly;
                     img {
@@ -86,7 +90,7 @@
                     form {
                         select {
                             width: 50%;
-                            font-size: .9rem;
+                            font-size: .65rem;
                         }
                         .buy-now {
                             width: 30%;

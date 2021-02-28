@@ -5,7 +5,9 @@ const tshirts = [
     {
         name: 'Telurian T-shirt no. 1',
         img1Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1613737011/T-Shirts/T-SHIRT_1_Telurian_logo_f7au9u.png',
+        alt1: 'Telurian T-shirt no. 1 - front',
         img2Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1613737011/T-Shirts/T-SHIRT_1_Telurian_logo_BACK_y7m2d8.png',
+        alt2: 'Telurian T-shirt no. 1 - back',
         payPal: `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="KYG7GUMM9C6CC" />
@@ -28,7 +30,9 @@ const tshirts = [
     {
         name: 'Telurian T-shirt no. 2',
         img1Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1613737003/T-Shirts/T-shirt_2_FRONT_udvywx.png',
+        alt1: 'Telurian T-shirt no. 2 - front',
         img2Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1613737003/T-Shirts/T-SHIRT_2__BACK_gjzakn.png',
+        alt2: 'Telurian T-shirt no. 2 - back',
         payPal: `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="TWD5LCF7ZPRJJ">
@@ -53,8 +57,8 @@ const renderTShirts = tshirts.map(t =>
     <div className='tshirt'>
         <p>{t.name}</p>
         <div className='tshirts-images'>
-            <img src={t.img1Url} />
-            <img src={t.img2Url} />
+            <img src={t.img1Url} alt={t.alt1}/>
+            <img src={t.img2Url} alt={t.alt2}/>
         </div>
     <div className='tshirt-paypal' dangerouslySetInnerHTML={{__html: t.payPal}}>
     </div>

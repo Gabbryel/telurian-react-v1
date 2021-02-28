@@ -8,9 +8,9 @@ const Background = () => {
     const bkgImg = 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1609321724/backgrounds/fotoBkg_hy7n23.jpg';
     return(
         <div className='background'>
-            { pathname === '/' ? <img src={bkgLanding} />
-             : pathname === '/about' || pathname === '/order' || pathname === '/merch'? <img src={bkgImg} />
-             : null }
+            { pathname === '/' ? <img src={bkgLanding} alt="Telurian from Zebra Music"/>
+             : pathname === '/about' || pathname === '/order' || pathname === '/merch' || pathname === '/about-telurian' || pathname === '/about-tellurium' ? <img src={bkgImg} alt="Telurian from Zebra Music"/>
+             : <img src={bkgLanding} alt="Telurian from Zebra Music"/> }
             
         </div>
     )

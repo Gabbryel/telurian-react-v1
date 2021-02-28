@@ -29,7 +29,6 @@
     border: none;
     color: inherit;
     outline: none;
-   
   }
   #order-here {
     display: block;
@@ -40,6 +39,26 @@
     border: 1px solid var(--grey);
     opacity: .8;
     padding: 0;
+  }
+  #no-route-meenu {
+    display: inline-block;
+    align-self: end;
+  }
+  #no-route-menu {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    p {
+      margin-bottom: 20px;
+    }
+    a {
+      padding: 0;
+      margin: 0 5px;
+    }
   }
 }
 // about page //

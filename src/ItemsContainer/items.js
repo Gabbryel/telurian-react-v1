@@ -1,6 +1,7 @@
 export const items = [
     {
         imgUrl: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612607180/dp_jhyzze.jpg',
+        alt: 'TELURIAN DELUXE DIGIPACK',
         payPalBtn: `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="TB5JUVDU8WTFJ">
@@ -23,6 +24,7 @@ export const items = [
     },
     {
         imgUrl: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612607186/dpltd_ildgkq.jpg',
+        alt: `TELLURIUM ARTWORK COLLECTOR'S EDITION`,
         payPalBtn: `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="ST6VVQG7TLXTU">
@@ -49,6 +51,7 @@ export const items = [
     },
     {
         imgUrl: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612607191/tDigEd_lz9tty.png',
+        alt: 'TELLURIUM DIGITAL VERSION',
         payPalBtn: `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                                    <input type="hidden" name="cmd" value="_s-xclick">
                                    <input type="hidden" name="hosted_button_id" value="B5CKHRFNJ872L">

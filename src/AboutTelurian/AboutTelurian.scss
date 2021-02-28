@@ -10,14 +10,12 @@
         font-size: 1.7rem;
         text-indent: 1em;
     }
-    #telurian, #tellurium {
-        font-size: 1rem;
-        width: auto;
-        position: relative;
-        opacity: .2;
-        color: #fdd;
-        background-color: var(--grey);
-        border-radius: 20px;
-        padding: 0 1em;
+    a {
+        border: 1px solid #00000020;
+        border-radius: 10px;
+        padding: 2px 20px;
+        background-color: #00000040;
+        color: #ffc;
+        font-size: .7rem;
     }
 }

@@ -10,7 +10,7 @@ const HamburgerMenu = () => {
         <div className='hamburger-container'>
             <div className='hamburger-links'>
                 <ul>
-                    <li><Link to='/'><img src={logo} id='hamburger-menu-logo'/></Link></li>
+                    <li><Link to='/'><img src={logo} id='hamburger-menu-logo'alt='telurian by zebra music'/></Link></li>
                     <li><Link to='/about'><FontAwesomeIcon icon={faInfoCircle} /></Link></li>
                     <li><Link to='/order'><FontAwesomeIcon icon={faShoppingCart} /></Link></li>
                     <li><Link to='/merch'><FontAwesomeIcon icon={faTshirt} /></Link></li>

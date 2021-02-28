@@ -9,8 +9,8 @@ const Title = () => {
     return(
         <div className='landing-page__title'>
             { pathname === '/' ? <h1 id='title' style={{fontFamily: 'Abw', paddingTop: '0em'}}><Link to="/">TELURIAN</Link></h1> 
-            : pathname === '/about' || pathname === '/order' || pathname === '/merch'? <h1 id='title' style={{fontFamily: 'Anor', paddingTop: '2em'}}><Link to="/">TELURIAN</Link></h1>
-            : null }
+            : pathname === '/about' || pathname === '/order' || pathname === '/merch' || pathname === '/about-telurian' ? <h1 id='title' style={{fontFamily: 'Anor', paddingTop: '2em'}}><Link to="/">TELURIAN</Link></h1>
+            : <h1 id='title' style={{fontFamily: 'Abw', paddingTop: '0em'}}><Link to="/">TELURIAN</Link></h1> }
             <h2>THE ROMINIMAL EXPERIENCE</h2>
         </div>
     );

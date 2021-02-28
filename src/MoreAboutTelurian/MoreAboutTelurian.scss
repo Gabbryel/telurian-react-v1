@@ -1,0 +1,49 @@
+#about-telurian, #about-tellurium {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    text-indent: 20px;
+    text-align: justify;
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+        font-variant: small-caps;
+    }
+    p {
+        font-size: 1.5rem;
+        letter-spacing: .02em;
+        line-height: 1.4;
+    }
+    img {
+        display: block;
+        position: relative;
+        width: 30%;
+        padding: 2em 0 4em;
+        margin: 0 auto;
+    }
+    a {
+        display: block;
+        text-align: center;
+        font-weight: 900;
+        font-size: 1.5rem;
+        padding: 1em 0;
+    }
+}
+
+
+#about-tellurium {
+    .about-tellurium-photos {
+        display: flex;
+        img {
+            width: 20%;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    #about-telurian, #about-tellurium {
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}

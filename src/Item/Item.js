@@ -2,7 +2,7 @@ import React from 'react';
 import './Item.scss';
 import {useLocation} from 'react-router-dom';
 
-const Item = ({key, imgUrl, paypalBtn, itemName, itemDescription, delivery}) => {
+const Item = ({key, imgUrl, alt, paypalBtn, itemName, itemDescription, delivery}) => {
     const {pathname} = useLocation()
     const timeNow = new Date()
     const promoTime = timeNow.getUTCHours() + 2
@@ -10,7 +10,7 @@ const Item = ({key, imgUrl, paypalBtn, itemName, itemDescription, delivery}) => 
     return(
         <div className='item'>
             <div className='item-photo'>
-                <img src={imgUrl}/>
+                <img src={imgUrl} alt={alt}/>
                 {pathname === '/about' ? <button>More photos</button> : null}
                 {pathname ==='/order' ? <div className='paypal' dangerouslySetInnerHTML={{__html: paypalBtn}}></div> : null }
             </div>
