@@ -4,9 +4,9 @@ import './TShirtsContainer.scss';
 const tshirts = [
     {
         name: 'Telurian T-shirt no. 1',
-        img1Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1613737011/T-Shirts/T-SHIRT_1_Telurian_logo_f7au9u.png',
+        img1Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1614619063/T-Shirts/model_1_front_axyxhr.jpg',
         alt1: 'Telurian T-shirt no. 1 - front',
-        img2Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1613737011/T-Shirts/T-SHIRT_1_Telurian_logo_BACK_y7m2d8.png',
+        img2Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1614619063/T-Shirts/model_2_front_v3ujz8.jpg',
         alt2: 'Telurian T-shirt no. 1 - back',
         payPal: `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick" />
@@ -29,9 +29,9 @@ const tshirts = [
     },
     {
         name: 'Telurian T-shirt no. 2',
-        img1Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1613737003/T-Shirts/T-shirt_2_FRONT_udvywx.png',
+        img1Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1614619063/T-Shirts/model_2_front_v3ujz8.jpg',
         alt1: 'Telurian T-shirt no. 2 - front',
-        img2Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1613737003/T-Shirts/T-SHIRT_2__BACK_gjzakn.png',
+        img2Url: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1614619063/T-Shirts/model_2_back_nhfdoa.jpg',
         alt2: 'Telurian T-shirt no. 2 - back',
         payPal: `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">

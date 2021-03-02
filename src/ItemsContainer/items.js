@@ -5,7 +5,7 @@ export const items = [
         payPalBtn: `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="TB5JUVDU8WTFJ">
-                            <input type="hidden" name="on0" value="Options"><select name="os0">
+                            <input type="hidden" name="on0" value="Options"><select name="os0" className:"select-price">
                                 <option value="personal pick up (no shipping)">item (no shipping incl.) €29.99 EUR</option>
                                 <option value="shipping in Romania by Post">item + shipping in Romania by Post €34.99 EUR</option>
                                 <option value="shipping in Romania by Courier">item + shipping in Romania by Courier €36.99 EUR</option>
@@ -20,7 +20,9 @@ export const items = [
                     </form>`,
        itemName: 'TELURIAN DELUXE DIGIPACK',
        itemDescription: ['Limited to 250 units available for sale.', 'Contains: 3 CDs,', 'a 12 pages booklet', 'in high-end package.', 'BONUS: one time download link with the digital version of Telurian'],
-       delivery: 'See the shipping options at the end of this page!'
+       delivery: 'See the shipping options at the end of this page!',
+       pathname: '/tdd-gallery',
+       morePhotos: 'More photos'
     },
     {
         imgUrl: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612607186/dpltd_ildgkq.jpg',
@@ -47,7 +49,9 @@ export const items = [
         itemDescription: ['Limited to 100 units available for sale.', 'Hand-numbered  from 003-102/152.',
                         'Contains: The Deluxe Digipack version incorporated in a disposable silver-lined and embossed white hardcover that includes on the frontpage about 1 gram of (pure) 99,999% Tellurium in a special hand-made toxicproof resin recipient',
                         'Plus Special Gift: a beautiful large Tellurium wall-poster (size A1) in high-end package and 3 different stickers!', 'BONUS: one time download link with the digital version of Telurian.'],
-        delivery: 'See the shipping options at the end of this page!'
+        delivery: 'See the shipping options at the end of this page!',
+        pathname: '/tace-gallery',
+        morePhotos: 'More photos'
     },
     {
         imgUrl: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612607191/tDigEd_lz9tty.png',
@@ -67,6 +71,7 @@ export const items = [
         itemName: `TELLURIUM DIGITAL VERSION`,
         itemDescription: ['Contains 25 tracks in wav and/or mp3 format', 'Full pictorial of the Digipack versions', 'Alternative digital poster of TELURIAN',    
                            'Digital version of the cover', 'BONUS (optional): a free copy of TELURIAN DELUXE 3CD DIGIPACK'],
-        delivery: `You'll receive a download link once PayPal confirms your payment.`
+        delivery: `You'll receive a download link once PayPal confirms your payment.`,
+        morePhotos: null
     }
 ];

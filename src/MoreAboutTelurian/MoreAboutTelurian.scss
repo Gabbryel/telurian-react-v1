@@ -34,8 +34,14 @@
 #about-tellurium {
     .about-tellurium-photos {
         display: flex;
+        justify-content: center;
         img {
-            width: 20%;
+            width: 30%;
+            height: 100%;
+            transition: transform .5s ease;
+            &:hover {
+                transform: scale(1.8);
+            } 
         }
     }
 }

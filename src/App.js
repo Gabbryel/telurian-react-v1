@@ -12,10 +12,11 @@ import MoreAboutTelurian from './MoreAboutTelurian/MoreAboutTelurian';
 import {useLocation} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle, faTshirt, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import ItemsPhotos from './ItemsPhotos/ItemsPhotos.js';
 
 
 function App() {
-  const pathname = useLocation()
+  const {pathname} = useLocation()
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname])
@@ -66,6 +67,14 @@ function App() {
               <Route exact path="/about-tellurium">
                 <Title />
                 <MoreAboutTelurian />
+              </Route>
+              <Route path="/tdd-gallery">
+                <Title />
+                <ItemsPhotos />
+              </Route>
+              <Route path="/tace-gallery">
+                <Title />
+                <ItemsPhotos />
               </Route>
               <Route path="*">
                 <h3 id='out'>OUT NOW</h3>

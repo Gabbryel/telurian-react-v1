@@ -1,0 +1,45 @@
+.images-gallery {
+    position: relative;
+    width: 100%;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 90%;
+    }
+    #left, #right, #close {
+        font-size: 30px;
+        z-index: 10;
+        color: #bbb;
+        cursor: pointer;
+    }
+    #left {
+        margin-right: -40px;
+    }
+    #right {
+        margin-left: -40px
+    }
+    #close {
+        margin-top: -50px;
+    }
+    p {
+        width: 100%;
+        margin: -20px 0 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .images-gallery {
+        width: 60%;
+        max-width: 900px;
+        margin: 0 auto;
+        #close {
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}

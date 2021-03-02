@@ -57,11 +57,13 @@
         }
         p {
             text-align: left;
-            font-size: 1.3rem;
+            font-size: .4rem;
         }
+        
         p:last-child {
-            padding-top: 1em;
-            font-weight: 900;
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: .8rem;
         }
     }
 }
@@ -74,7 +76,7 @@
                 width: 100%;
                 select {
                     width: 100%;
-                    font-size: 1rem;
+                    font-size: .8rem;
                     color: var(--grey);
                 }
             .buy-now {

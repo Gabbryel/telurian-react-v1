@@ -9,7 +9,7 @@ const Background = () => {
     return(
         <div className='background'>
             { pathname === '/' ? <img src={bkgLanding} alt="Telurian from Zebra Music"/>
-             : pathname === '/about' || pathname === '/order' || pathname === '/merch' || pathname === '/about-telurian' || pathname === '/about-tellurium' ? <img src={bkgImg} alt="Telurian from Zebra Music"/>
+             : pathname === '/about' || pathname === '/order' || pathname === '/merch' || pathname === '/about-telurian' || pathname === '/about-tellurium' || pathname === '/tdd-gallery' || pathname === '/tace-gallery' ? <img src={bkgImg} alt="Telurian from Zebra Music"/>
              : <img src={bkgLanding} alt="Telurian from Zebra Music"/> }
             
         </div>

@@ -52,48 +52,29 @@ const MoreAboutTelurian = () => {
         : <div id="about-tellurium">
             <h3>About Tellurium</h3>
             <p>Tellurium is a chemical element with the symbol Te and the atomic number 54 in Mendeleev's Periodical
-                Table -
-                being the 26th element discovered in history - is extremely rare (>1µg/kg or ~2 × 10−7%) and implicitly
-                very
-                precious, found in nature as a metalloid called teluride, mixed together with gold, silver or cooper, it
-                has a
-                fabulous story and it is the only natural element ever discovered in Romania. Etymologically, the word
-                tellurium
-                comes from the Latin language, where tellus means earth.</p>
+                Table - being the 26th element discovered in history - is extremely rare (>1µg/kg or ~2 × 10−7%) and implicitly
+                very precious, found in nature as a metalloid called teluride, mixed together with gold, silver or cooper, it
+                has a fabulous story and it is the only natural element ever discovered in Romania. Etymologically, the word
+                tellurium comes from the Latin language, where tellus means earth.</p>
             <p>Tellurium is a non-radioactive yet toxic semi-metal, found in Europe only in Sweden and Romania, with our
-                country
-                having deposits with the highest concentration (30-40g/ton) but unfortunately the profitable mines were
-                shut down
-                in 1992 and it seems like the ores were later dubiously leased in the same way as Rosia Montana, to the
-                deficit of
-                romanian economy. It is sometimes considered the real reason behind the alleged gold mining project
-                proposed in
-                Apuseni Mountains by others, precisely because of the growing demand of tellurium on the world
+                country having deposits with the highest concentration (30-40g/ton) but unfortunately the profitable mines were
+                shut down in 1992 and it seems like the ores were later dubiously leased in the same way as Rosia Montana, to the
+                deficit of romanian economy. It is sometimes considered the real reason behind the alleged gold mining project
+                proposed in Apuseni Mountains by others, precisely because of the growing demand of tellurium on the world
                 industrial market.</p>
             <p>It was discovered in 1782 at the Fața Băii mine near Zlatna, in the Apuseni Mountains, and first
-                researched by Franz
-                Joseph Muller, at that time supervisor of the gold mines in Transylvania on behalf of the
-                Austro-Hungarian Empire.
-                Tellurium created mystery from the very beginning because no one knew what it was for years and the
-                emulation around
-                it stirred the scientific world with temporary disputes, while its incredible beauty gained a peculiar
-                interest from
-                mineralogists and collectors. It took 16 years and more scientists to be isolated and identified as such
-                in 1798 by
-                the famous German chemist Martin Heinrich Kloproth, who also named it, during which time it bore the
-                significant names
-                of metallum problematicum and aurum paradoxum.</p>
+                researched by Franz Joseph Muller, at that time supervisor of the gold mines in Transylvania on behalf of the
+                Austro-Hungarian Empire. Tellurium created mystery from the very beginning because no one knew what it was for 
+                years and the emulation around it stirred the scientific world with temporary disputes, while its incredible 
+                beauty gained a peculiar interest from mineralogists and collectors. It took 16 years and more scientists to be isolated 
+                and identified as such in 1798 by the famous German chemist Martin Heinrich Kloproth, who also named it, during which 
+                time it bore the significant names of metallum problematicum and aurum paradoxum.</p>
             <p>The history of tellurium is fascinating and difficult to cover in a few lines, starting with the role
-                played
-                in the creation of Mozart's famous work "The Magic Flute" and ending with the first atomic bomb whose
-                shell
-                was made of tellurium. It named cities (Telluride in Colorado USA) and the World Car of the Year 2020
-                (Kia Telluride),
-                there are several festivals in the world who bears the same name, tons of articles, studies and books
-                about it and its
-                properties, an on-going dispute between Romania, Hungary and Austria regarding the birthplace of its
-                discoverer, special
-                editions of stamps dedicated to it (including one in Romania, in 2011) and the most recent cultural
+                played in the creation of Mozart's famous work "The Magic Flute" and ending with the first atomic bomb whose
+                shell was made of tellurium. It named cities (Telluride in Colorado USA) and the World Car of the Year 2020
+                (Kia Telluride), there are several festivals in the world who bears the same name, tons of articles, studies and books
+                about it and its properties, an on-going dispute between Romania, Hungary and Austria regarding the birthplace of its
+                discoverer, special editions of stamps dedicated to it (including one in Romania, in 2011) and the most recent cultural
                 influence is the present album.</p>
             <div class="about-tellurium-photos">
                 <img src="https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1609321723/backgrounds/tellurium_one_gxvptv.png" alt="Tellurium" />
