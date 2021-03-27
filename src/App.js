@@ -23,6 +23,7 @@ function App() {
 
   let mobileHeight = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${mobileHeight}px`);
+  
   window.addEventListener('resize', () => {
   let mobileHeight = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${mobileHeight}px`);
