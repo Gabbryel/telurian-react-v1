@@ -12,7 +12,7 @@ const Item = ({btnPathname, imgUrl, alt, paypalBtn, paypalPromo, itemName, itemD
                 {pathname === '/order' && soldOut ? <div className='sold-out'></div> : null}
                 <img src={imgUrl} alt={alt}/>
                 {pathname === '/about' ? <Link to={btnPathname}><button>{morePhotos}</button></Link> : null}
-                {pathname ==='/order' ? <div className='paypal' dangerouslySetInnerHTML={{__html: renderPrice(paypalPromo, paypalBtn)}}></div> : null }
+                {pathname ==='/order' && !soldOut ? <div className='paypal' dangerouslySetInnerHTML={{__html: renderPrice(paypalPromo, paypalBtn)}}></div> : null }
             </div>
             <div className='item-description'>
                 <h3>{itemName}</h3>
