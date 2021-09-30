@@ -21,7 +21,7 @@
                 content: 'SOLD OUT';
                 display: inline-block;
                 font: {
-                    size: 3rem;
+                    size: 20px;
                 }
                 color: #fff;
                 transform: rotate(315deg);
@@ -29,6 +29,9 @@
                 top: 40%;
                 left: 0;
                 width: 100%;
+                @media (min-width: 768px) {
+                    font-size: 40px;
+                }
             }
         }
         img {

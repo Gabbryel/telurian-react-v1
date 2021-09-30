@@ -42,7 +42,7 @@ const ItemsPhotos = () => {
         : pathname === '/tace-gallery' ?
             <div className='images-gallery'>
                 <FontAwesomeIcon icon={faArrowCircleLeft} id='left' onClick={(e) => onCounterChange(e)} />
-                <img src={tceImages[counter]} />
+                <img src={tceImages[counter]} alt="Telurian Zebra project" />
                 <FontAwesomeIcon icon={faArrowCircleRight} id='right' onClick={(e) => onCounterChange(e)} />
                 <p>{counter + 1}/{tceImages.length}</p>
                 <Link to='/about'><FontAwesomeIcon icon={faTimesCircle}id='close'/></Link>
