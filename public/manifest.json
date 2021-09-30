@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Telurian",
+  "name": "Telurian Project",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612607180/dp_jhyzze.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612607180/dp_jhyzze.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }

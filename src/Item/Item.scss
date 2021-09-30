@@ -4,10 +4,33 @@
     padding: 3em 2em;
     color: var(--grey);
     .item-photo {
+        position: relative;
         align-self: start;
         display: flex;
         flex-direction: column;
         width: 35%;
+        .sold-out {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 95%;
+            width: 100%;
+            z-index: 100;
+            background: #00000090;
+            &:before {
+                content: 'SOLD OUT';
+                display: inline-block;
+                font: {
+                    size: 3rem;
+                }
+                color: #fff;
+                transform: rotate(315deg);
+                position: absolute;
+                top: 40%;
+                left: 0;
+                width: 100%;
+            }
+        }
         img {
             width: 100%;
         }

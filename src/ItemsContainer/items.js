@@ -38,7 +38,8 @@ export const items = [
     itemDescription: ['Limited to 250 units available for sale.', 'Contains: 3 CDs,', 'a 12 pages booklet', 'in high-end package.', 'BONUS: one time download link with the digital version of Telurian'],
     delivery: 'See the shipping options at the end of this page!',
     pathname: '/tdd-gallery',
-    morePhotos: 'More photos'
+    morePhotos: 'More photos',
+    soldOut: false,
     },
     {
         imgUrl: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612607186/dpltd_ildgkq.jpg',
@@ -85,7 +86,8 @@ export const items = [
                         'Plus Special Gift: a beautiful large Tellurium wall-poster (size A1) in high-end package and 3 different stickers!', 'BONUS: one time download link with the digital version of Telurian.'],
         delivery: 'See the shipping options at the end of this page!',
         pathname: '/tace-gallery',
-        morePhotos: 'More photos'
+        morePhotos: 'More photos',
+        soldOut: true,
     },
     {
         imgUrl: 'https://res.cloudinary.com/https-www-zebramusic-net/image/upload/v1612607191/tDigEd_lz9tty.png',
@@ -119,6 +121,7 @@ export const items = [
         itemDescription: ['Contains 25 tracks in wav and/or mp3 format', 'Full pictorial of the Digipack versions', 'Alternative digital poster of TELURIAN',    
                         'Digital version of the cover', 'BONUS (optional): a free copy of TELURIAN DELUXE 3CD DIGIPACK'],
         delivery: `You'll receive a download link once PayPal confirms your payment.`,
-        morePhotos: null
+        morePhotos: null,
+        soldOut: false,
     }
 ];

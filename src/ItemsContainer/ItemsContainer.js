@@ -10,9 +10,20 @@ const ItemsContainer = () => {
     return(
         <div className='items-container'>
             <p>Three Different High-end Versions</p>
-           {pathname === '/order' ? <p id='order-page__punch-line'>Order your copy here!</p> : null }
-           { items.map((el, i) => <Item key={i} imgUrl={el.imgUrl} alt={el.alt} paypalBtn={el.payPalBtn} paypalPromo={el.payPalPromo} itemName={el.itemName} itemDescription={el.itemDescription} delivery={el.delivery} btnPathname={el.pathname} morePhotos={el.morePhotos}/>) }
-           { pathname === '/order' ? <div className='order-page__shipping'>
+        {pathname === '/order' ? <p id='order-page__punch-line'>Order your copy here!</p> : null }
+        { items.map((el, i) => <Item key={i} 
+        imgUrl={el.imgUrl} 
+        alt={el.alt} 
+        paypalBtn={el.payPalBtn} 
+        paypalPromo={el.payPalPromo} 
+        itemName={el.itemName} 
+        itemDescription={el.itemDescription} 
+        delivery={el.delivery} 
+        btnPathname={el.pathname} 
+        morePhotos={el.morePhotos}
+        soldOut={el.soldOut}/>)
+        }
+        { pathname === '/order' ? <div className='order-page__shipping'>
                                         <p>Shipping Options:</p>
                                         <p>Shipping in Romania</p>
                                         <p>Posta Romana 5 Euro (including CD protection) 2-4 days.</p>
