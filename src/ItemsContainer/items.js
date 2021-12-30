@@ -134,7 +134,7 @@ const telurian2 = [
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="DEHYRUR4KH6QY">
                             <tr><td><input type="hidden" name="on0" value="Options"></td></tr><tr><td><select name="os0">
-                                <option value="download link t2">download link t2 €29.99 EUR</option>
+                                <option value="download link t2">download link t2 €34.90 EUR</option>
                             </select> </td></tr>
                             <input type="hidden" name="currency_code" value="EUR">
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
