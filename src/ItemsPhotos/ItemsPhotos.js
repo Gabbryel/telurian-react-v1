@@ -6,8 +6,6 @@ import {faArrowCircleLeft, faArrowCircleRight, faTimesCircle} from '@fortawesome
 import { tddImages, tceImages } from './photos';
 
 const ItemsPhotos = () => {
-    
-    
     const {pathname} = useLocation()
     const [counter, setCounter] = useState(0);
 

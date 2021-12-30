@@ -8,7 +8,7 @@
         align-self: start;
         display: flex;
         flex-direction: column;
-        width: 35%;
+        width: 100%;
         .sold-out {
             position: absolute;
             top: 0;
@@ -21,21 +21,25 @@
                 content: 'SOLD OUT';
                 display: inline-block;
                 font: {
-                    size: 20px;
+                    size: 40px;
+                    family: 'Abw';
                 }
                 color: #fff;
                 transform: rotate(315deg);
                 position: absolute;
-                top: 40%;
-                left: 0;
-                width: 100%;
+                top: 37%;
+                left: -27%;
+                width: 150%;
+                padding: 10px 0;
                 @media (min-width: 768px) {
-                    font-size: 40px;
+                    font-size: 45px;
                 }
             }
         }
         img {
+            position: relative;
             width: 100%;
+            margin: 0 auto;
         }
         button {
             margin: .5em 0;
@@ -54,7 +58,8 @@
             margin: 0 auto;
             width: 100%;
             select {
-                width: 100%;
+                width: 60%;
+                height: 30px;
                 font-size: 1.1rem;
                 margin-top: .7em;
             }
@@ -66,7 +71,7 @@
                 border-radius: 5px;
                 margin-top: .4em;
                 padding: 0 1em;
-                width: 97%;
+                width: 60%;
                 opacity: .8;
             }
         }
@@ -74,12 +79,12 @@
     .item-description {
         align-self: start;
         padding-left: 2em;
-        width: 65%;
+        width: 100%;
         h3 {
-            margin: 0;
+            margin: 10px 0 0 0;
             padding-bottom: 1em;
             font-size: 1.4rem;
-            text-align: left;
+            text-align: center;
         }
         p {
             text-align: left;
@@ -91,6 +96,30 @@
             margin-top: 10px;
             font-weight: 700;
             font-size: .8rem;
+        }
+    }
+}
+
+@media (min-width: 540px) {
+    .item {
+        .item-photo {
+            width: 35%;
+            .sold-out {
+                &:before {
+                    font-size: 30px;
+                }
+            }
+            .paypal {
+                select {
+                    width: 100%;
+                }
+                .buy-now {
+                    width: 100%;
+                }
+            }
+        }
+        .item-description {
+            width: 65%;
         }
     }
 }
