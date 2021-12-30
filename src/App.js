@@ -36,8 +36,7 @@ function App() {
               <Route exact path="/">
                 <h3 id='out'>OUT NOW</h3>
                 <Title />
-                <button id='enter-btn'><Link to="/about-telurian-1">TELURIAN 1</Link></button>
-                <button id='enter-btn'><Link to="/about-telurian-2">TELURIAN 2</Link></button>
+                <button id='enter-btn'><Link to="/about-telurian-2">ENTER</Link></button>
               </Route>
               <Route exact path="/about-telurian-1">
                 <>
