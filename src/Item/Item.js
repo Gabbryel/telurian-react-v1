@@ -19,6 +19,7 @@ const Item = ({btnPathname, imgUrl, alt, paypalBtn, paypalPromo, itemName, itemD
                 {itemDescription.map((el, i) => <p key={i}>{el}</p>)}
                 { pathname === '/order' ? <p>{delivery}</p> : null}
             </div>
+            <hr/>
         </div>
     )
 }
